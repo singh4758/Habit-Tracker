@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/e16cc44bff.js" crossorigin="anonymous"></script>
+        <link href="/css/home.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 style="text-align: center; margin-top: 50px; color: blue;">HABIT TRACKER</h1>
+        <form id="form" action="/" method="POST">
+            <input name="habitName" required>
+            <button type="submit">Add Habit</button>
+        </form>
+        <h4 style="text-align: center; color: red; margin-bottom: 0px;">Habit List</h4>
+        <div class="list-boundry">
+            <ul class="list-container">
+                <% for(habit of habits){%> 
+                    <li class="list">
+                        <a href="/habit-tracker/view-habit/?id=<%=habit._id%>"><%= habit.name%></a>
+                        <a href="/habit-delete?id=<%=habit._id %>"><i class="fas fa-trash" style="color: red;"></i></a>
+                    </li>
+                <%}%>
+            </ul>
+        </div>
+        <script src="js/home.js" ></script>
+    </body>
+</html>

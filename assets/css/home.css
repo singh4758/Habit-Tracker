@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.header{
+    background-color: blue;
+    color: black;
+}
+
+#form{
+    margin: 0vh 31vw;
+    margin-top: 50px;
+}
+
+.list-boundry{
+    width: 50vw;
+    height: 60vh;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 25px;
+    overflow-y: scroll;
+}
+
+.list-container{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.list{
+    height: 30px;
+    display: flex;
+    width: 320px;
+    margin: auto;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+a{
+    margin: 0px 10px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.list-daily-habit{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

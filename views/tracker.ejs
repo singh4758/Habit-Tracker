@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/tracker.css" >
+    </head>
+    <body>
+        <a href="/" style="text-decoration: none;"><h1 id="header">Habit Tracker</h1></a>
+        <h2 id="habit-name"><spam style="color: red;">Habit Name :- </spam><%=habit.name %></h2>
+        <input name="startdate" type="date" id="startDate">
+        <input name="enddate" type="date" id="endDate">
+        <button id="setDate">Show</button>
+        <div class="list-container">
+            <ul id="list-daily-habit">
+                
+            </ul>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js" integrity="sha512-Izh34nqeeR7/nwthfeE0SI3c8uhFSnqxV0sI9TvTcXiFJkMd6fB644O64BRq2P/LA/+7eRvCw4GmLsXksyTHBg==" crossorigin="anonymous"></script>
+        <script src="/js/tracker.js"></script>
+    </body>
+</html>
