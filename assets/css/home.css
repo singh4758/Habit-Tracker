@@ -9,8 +9,9 @@ body{
 }
 
 #form{
-    margin: 0vh 31vw;
+    margin: auto;
     margin-top: 50px;
+    text-align: center;
 }
 
 .list-boundry{
