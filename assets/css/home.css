@@ -43,6 +43,10 @@ body{
     cursor: pointer;
 }
 
+.list:hover a{
+    color: black;
+}
+
 a{
     margin: 0px 10px;
     padding-top: 5px;
