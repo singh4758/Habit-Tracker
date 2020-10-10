@@ -35,8 +35,12 @@ body{
     margin: auto;
     margin-bottom: 10px;
     justify-content: space-between;
-    border: 1px solid white;
     border-radius: 25px;
+}
+.list:hover{
+    border: 1px solid white;
+    background-color: blue;
+    cursor: pointer;
 }
 
 a{
