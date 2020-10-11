@@ -1,5 +1,7 @@
 const Habits = require('../models/habits');
 
+
+// this controller help us to show the list of habit
 module.exports.habitShow = function(req,res){
     Habits.find({},function(err,habits){
         if(err){
@@ -12,6 +14,7 @@ module.exports.habitShow = function(req,res){
     });
 }
 
+// this controller help us to add habit in mongodb
 module.exports.habitAdd = function(req,res){
     Habits.create({
         name : req.body.habitName,
@@ -26,6 +29,7 @@ module.exports.habitAdd = function(req,res){
     });
 }
 
+//this controller help us to delte from mongodb
 module.exports.habitDelete = function(req,res){
     Habits.findByIdAndDelete(req.query.id,function(err){
         if(err){

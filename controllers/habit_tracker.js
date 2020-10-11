@@ -1,5 +1,6 @@
 const Habits = require('../models/habits');
 
+//this controller help us to find habit by id and sent to respective  habit tracker java script file
 module.exports.findHabit = function(req,res){
     Habits.findById(req.query.id,function(err,habit){
         if(err){
@@ -10,7 +11,7 @@ module.exports.findHabit = function(req,res){
     });
 }
 
-
+//this controller help us to to track the detail of habit day wise
 module.exports.viewHabit = function(req,res){
     Habits.findById(req.query.id,function(err,habit){
         if(err){
@@ -23,6 +24,7 @@ module.exports.viewHabit = function(req,res){
     });
 }
 
+//this controller help us to update habit by day wise
 module.exports.updateHabit = function(req,res){
     let id = req.query.id;
     let date = req.query.date;
