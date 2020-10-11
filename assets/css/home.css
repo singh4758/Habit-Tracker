@@ -48,8 +48,9 @@ body{
 }
 
 a{
+    font-size: 20px;
     margin: 0px 10px;
-    padding-top: 5px;
+    padding-top: 3px;
     text-decoration: none;
     color: white;
     font-weight: bolder;
